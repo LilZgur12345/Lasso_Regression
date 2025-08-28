@@ -9,6 +9,8 @@ import warnings
 from sklearn.exceptions import ConvergenceWarning
 warnings.filterwarnings("ignore", category=ConvergenceWarning)
 
+# This code conducts regression analysis on the Air Quality dataset from the UCI Machine Learning Repository
+
 df = pd.read_csv('data/AirI.csv', header=None)
 X = df.iloc[:, 1:].to_numpy()
 y = df.iloc[:, 0].to_numpy()
